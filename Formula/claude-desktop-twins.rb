@@ -9,7 +9,6 @@ class ClaudeDesktopTwins < Formula
   depends_on :macos
 
   def install
-    libexec.install "bin", "lib", "helper"
     system "swiftc", "-O", "-target", "arm64-apple-macos12",
            "-o", "cdt-helper-arm64", "helper/cdt-helper.swift"
     system "swiftc", "-O", "-target", "x86_64-apple-macos12",
@@ -17,6 +16,7 @@ class ClaudeDesktopTwins < Formula
     (libexec/"libexec").mkpath
     system "lipo", "-create", "-output", libexec/"libexec/cdt-helper",
            "cdt-helper-arm64", "cdt-helper-x86_64"
+    libexec.install "bin", "lib", "helper"
     bin.install_symlink libexec/"bin/claude-desktop-twins"
     bin.install_symlink libexec/"bin/claude-desktop-twins" => "cdt"
   end
