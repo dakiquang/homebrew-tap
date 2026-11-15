@@ -2,7 +2,7 @@ class ClaudeDesktopTwins < Formula
   desc "Run several Claude Desktop accounts side by side on macOS (unofficial)"
   homepage "https://github.com/dakiquang/claude-desktop-twins"
   url "https://github.com/dakiquang/claude-desktop-twins/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "REPLACE_WITH_RELEASE_TARBALL_SHA256" # set when v0.1.0 is tagged
+  sha256 "7f5a9544bb432709e40ddf4627a972bc42e25a7a20d9138553862ffe1a6a638c"
   license "MIT"
   head "https://github.com/dakiquang/claude-desktop-twins.git", branch: "main"
 
