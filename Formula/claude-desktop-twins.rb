@@ -1,8 +1,8 @@
 class ClaudeDesktopTwins < Formula
   desc "Run several Claude Desktop accounts side by side on macOS (unofficial)"
   homepage "https://github.com/dakiquang/claude-desktop-twins"
-  url "https://github.com/dakiquang/claude-desktop-twins/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "ede9da6e650ac0c492b7406db620126c5bebc5bf5af37917bb5015cc1ac2afb4"
+  url "https://github.com/dakiquang/claude-desktop-twins/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "53503d438c6134fcea7fdd55e17ffc5e6028366da09b2741b6af964d146bf136"
   license "MIT"
   head "https://github.com/dakiquang/claude-desktop-twins.git", branch: "main"
 
